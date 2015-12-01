@@ -43,12 +43,12 @@ Fetched 1 record(s) in 1ms
 
 ## U (update)
 
-1. Creating a variable to store the Steve object
+1) Creating a variable to store the Steve object
 ```
 var steve = db.family.findOne({name:'Steve'})
 ```
 
-2. Showing the content of variable
+2) Showing the content of variable
 ```
 janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> steve
 {
@@ -58,14 +58,14 @@ janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> steve
 }
 ```
 
-3. Changing variable value
+3) Changing variable value
 
 ```
 janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> steve.name = 'Steve Gomes'
 Steve Gomes
 ```
 
-4. Checking the changed effect before save
+4) Checking the changed effect before save
 
 ```
 janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> steve
@@ -76,7 +76,7 @@ janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> steve
 }
 ```
 
-5. Change value again, adding keys to Json document
+5) Change value again, adding keys to Json document
 ```
 janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> steve.age = 3
 3
@@ -91,7 +91,7 @@ janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> steve
 ```
 
 
-6. Persinting permanetly changes
+6) Persinting permanetly changes
 
 ```
 janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> db.family.save(steve)
@@ -103,7 +103,9 @@ WriteResult({
 })
 ```
 
-7. Querying all jsons doccuments from *Family* collection 
+7) Querying all jsons doccuments from *Family* collection 
+
+```
 janynne-Lenovo-Ideapad-Flex14(mongod-3.0.7) private> db.family.find()
 {
   "_id": ObjectId("565d2b9b495934b959882cce"),
